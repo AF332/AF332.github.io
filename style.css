@@ -1,0 +1,774 @@
+/* AFFECTS THE WHOLE BODY */
+body {
+    font-family: Arial, sans-serif; /* Set the default font family to Arial */
+    margin: 0; /* Remove the default margin */
+    padding: 0; /* Remove the default padding */
+}
+
+/* AFFECTS THE HEADER */
+header {
+    padding: 20px; /* Add padding around the header */
+    height: 780px; /* Set the height of the header */
+    background-color: black;
+    background-image: url("images/krisjanis-mezulis-b-KPFD8eFLQ-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* AFFECTS DESTINASII LOGO */
+nav img { /* Target images within <nav> elements */
+    background-repeat: no-repeat; /* Ensure the background image does not repeat */
+    background-size: 200px; /* Set the size of the background image */
+    display: inline-block; /* Change display to inline-block for layout purposes */
+    height: 180px; /* Set the height of the element */
+    left: 15px; /* Position the element at the very left */
+    position: absolute; /* Change position context to absolute for site-wide positioning */
+    text-indent: -999999px; /* Hide any text inside by indenting it far off-screen */
+    top: -20px; /* Position the element at the very top */
+    width: 180px; /* Set the width of the element */
+}
+
+/* AFFECTS NAVIGATION BAR CONTAINER*/
+nav ul { 
+    background-color: transparent; /* Set the background color of the navigation bar to white */
+    float: right; /* Align the navigation menu to the right */
+    list-style-type: none; /* Remove bullet points from the list (Home, About Us, Locations, Contact)*/
+    margin: 0; /* Remove the default margin */
+    padding: 20px 100px; /* Add padding for alignment */;
+}
+
+/* AFFECTS NAVIGATION LIST ITEMS */
+nav li { /* Affects the list items within the navigation menu */
+    float: right; /* Align list items horizontally */
+}
+
+/* AFFECTS NAVIGATION LINKS */
+nav li a { /* Affects the links within the list items */
+    color: white; /* Set the text color to black */
+    display: block; /* Make the link fill the area of the list item for easier clicking */
+    padding: 10px 16px; /* Add padding around the text for better spacing */
+    text-align: center; /* Center the text within the link */
+    text-decoration: none; /* Remove the underline from the link */
+    text-transform: uppercase; /* Change the text to uppercase */
+}
+
+
+/* AFFECTS THE LINKS WITHIN THE LIST ITEMS WHEN HOVERED OVER */
+nav li a:hover { 
+    background-color: transparent; /* Change the background color to dark grey on hover */
+    text-decoration: underline; /* Add an underline to the link text on hover */
+    text-decoration-color: #7e80a6; /* Set the underline color to red */
+    color: #7e80a6; /* Change the text color to red on hover */
+
+}
+
+/* AFFECT LOCATION MENU ITEM */
+.dropdown {
+    background-color: transparent; /* Set the background color of the dropdown menu */
+    display: inline-block; /* Make the dropdown fit its content width and allow it to be inline with other elements */
+    position: relative; /* Set the position context to relative for proper dropdown positioning */
+
+}
+
+/* AFFECTS THE DROPDOWN CONTAINER */
+.dropdown-content { 
+    background-color: #8E90B6; /* Set the background color of the dropdown content */
+    box-shadow: 2px 2px 5px 0px #8E90B6; /* Add a shadow for depth of the location dropdown */
+    display: none; /* Hide the dropdown content by default */
+    min-width: 150px; /* controls the size of the dropdown box */
+    transform: translateX(-23%); /* Move the dropdown content to the left by 32% */
+    padding: 10px 20px;  /* Ensure sufficient padding */
+    position: absolute; /* Position the dropdown content absolutely relative to its parent */
+    z-index: 1; /* Ensure the dropdown content stacks on top of other content */
+    box-sizing: border-box;  /* Includes padding and border in the width calculation */
+    border: 1px solid #ddd;  /* Optional: adds a subtle border */
+}
+
+/* AFFECTS THE LINKS WITHIN THE DROPDOWN */
+.dropdown-content a {
+    background-color: #8E90B6;
+    min-width: 150px;  /* Ensures each link has at least this width */
+}
+
+/* AFFECTS THE LINKS WITHIN THE DROPDOWN WHEN HOVERED OVER */
+.dropdown-content a:hover { 
+    color: black; /* Change the text color to white on hover */
+    text-decoration: underline; /* Add an underline to the link text on hover */
+    text-decoration-color: black; /* Set the underline color to white */
+}
+
+/* AFFECTS THE DROPDOWN WHEN HOVERED OVER */
+.dropdown:hover .dropdown-content { /* Display the dropdown content when hovering over the dropdown */
+    display: block; /* Display the dropdown content when hovering over the dropdown */
+}
+
+/* AFFECTS THE NAVIGATION MENU AFTER THE LIST ITEMS */
+nav ul:after { 
+    clear: both; /* Clear the floating effect, ensuring the parent contains the floated children */
+    content: ""; /* Necessary for the clearfix to work */
+    display: table; /* Change the display to table to utilize the clear property */
+}
+
+/* AFFECTS THE TEXT AND BUTTON CONTAINER */
+.header-section {
+    background-color: transparent;
+}
+
+/* AFFECTS "DISCOVER THE WORLD WITH US" */
+.header-section h1 {
+    background-color: transparent;
+    font-size: 2em;
+    margin: 0 0 20px;
+    padding: 0 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    top: 320px;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* AFFECTS THE "BOOK NOW" BUTTON */
+.header-section button {
+    background-color: #7e80a6; /* Button background */
+    color: white; /* Button text color */
+    border: 2px solid transparent; /* Remove border */
+    padding: 12px 24px; /* Padding inside the button */
+    text-transform: uppercase; /* Uppercase text */
+    font-weight: bold; /* Bold font */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s; /* Smooth transition for hover effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 200px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    border-color: #7e80a6;
+    position: absolute;
+    left: 50%;
+    top: 550px;
+    transform: translate(-50%, -50%);
+}
+
+/* AFFECTS THE "BOOK NOW" BUTTON WHEN HOVERED OVER */
+.header-section button:hover {
+    background-color: #ddd; /* Light grey background on hover */
+    border-color: #7e80a6; /* Match border color to background */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Slightly larger shadow on hover */
+}
+
+/* MOBILE OPTIMISATION FOR "DISCOVER THE WORLD WITH US" TEXT */
+@media (max-width: 600px) { 
+    .header-section h1 {
+        font-size: 1.5em; /* Smaller text on small screens */
+    }
+}
+
+/* AFFECTS THE "WHY TRAVEL?" TEXT */
+.travel-section h2 {
+    text-align: center;
+    margin-top: 30px;
+    background-color: white;
+    color: #7e80a6;
+    padding: 20px;
+}
+
+/* AFFECTS THE SPACES INBETWEEN THE 3 IMAGES CONTAINERS */
+.travel-cards {
+    display: flex;
+    justify-content: space-around; /* Adjusted for better spacing around items */
+    margin: 40px;
+    background-color: white;
+}
+
+/* AFFECTS THE INDIVIDUAL IMAGE CONTAINERS */
+.card {
+    position: relative;
+    width: 340px; /* Reduced to accommodate circular design */
+    overflow: hidden;
+    text-align: center; /* Center content under the image */
+    background-color: white; /* Adjusted background color for better visibility */
+    height: 400px;
+}
+
+/* AFFECTS THE IMAGES WITHIN THE IMAGE CONTAINERS */
+.card img {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 300px; /* Full width of the card */
+    border-radius: 50%; /* Makes the image circular */
+    display: block;
+    transition: transform 0.5s ease; /* Smooth transition for zoom effect */
+    background-color: white;
+    height: 300px;
+    box-shadow: #7e80a6 0 0 7px;
+    border: 1px solid white;
+}
+
+/* AFFECTS THE HOVER ON THE IMAGES */
+.card:hover img {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+/* AFFECTS THE OVERLAY TEXT ON THE IMAGES */
+.overlay {
+    position: absolute;
+    bottom: 0; /* Align overlay to the bottom of the card */
+    left: 0;
+    right: 0;
+    background-color: transparent; /* Adjusted transparency for aesthetic */
+    color: black;
+    padding: 0px; /* Adjusted padding for better fit */
+    text-align: center;
+}
+
+/* AFFECTS THE TEXT WITHIN THE OVERLAY */
+.overlay h3 {
+    margin: 0;
+    font-size: 1em; /* Adjusted size for fitting within the design */
+    font-weight: bold;
+}
+
+/* AFFECTS THE BUTTON WITHIN THE OVERLAY */
+.travel-cards button {
+    background-color: #7e80a6; /* Updated color for better visibility */
+    border: none;
+    padding: 8px 16px; /* Adjusted padding */
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 0.8em; /* Reduced font size */
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition for background and border color changes */
+}
+
+.travel-cards button:hover {
+    background-color: #5a5c7e; /* Slightly darker shade on hover for visibility */
+    border-color: #5a5c7e; /* Changes border color to match the background on hover */
+}
+
+/* AFFECTS THE CONTAINER FOR THE IMAGE, TEXT, AND BUTTON */
+.Moto-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    padding: 70px 20vw;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    transition: padding 0.3s ease-out;
+}
+
+@media (max-width: 2000px) {
+    .Moto-section {
+        padding: 70px 10vw; /* Reduce horizontal padding as the screen size decreases */
+    }
+}
+
+@media (max-width: 1600px) {
+    .Moto-section {
+        padding: 70px 7vw; /* Reduce horizontal padding as the screen size decreases */
+    }
+}
+
+@media (max-width: 1260px) {
+    .Moto-section {
+        padding: 70px 2vw; /* Reduce horizontal padding as the screen size decreases */
+    }
+}
+
+/* AFFECTS THE TEXT, BUTTON CONTAINER WITHIN THE SHORT ABOUT US SECTION */
+.Moto-content {
+    width: 50%;
+    padding-right: 20px;
+}
+
+/* AFFECTS THE IMAGES WITHIN THE SHORT ABOUT US SECTION */
+.Moto-content h3 {
+    color: #7e80a6;
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+/* AFFECTS THE MAIN PARAGRAPH WITHIN THE SHORT ABOUT US SECTION */
+.Moto-content p {
+    color: black;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* AFFECTS THE BUTTON WITHIN THE SHORT ABOUT US SECTION */
+.Moto-content button {
+    background-color: #7e80a6;  /* Regular state background color */
+    color: white;
+    border: 2px solid transparent; /* Adds a border that's transparent normally */
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition for background and border color changes */
+}
+
+/* AFFECTS THE BUTTON WITHIN THE SHORT ABOUT US SECTION WHEN HOVERED OVER */
+.Moto-content button:hover {
+    background-color: #5a5c7e; /* Slightly darker shade on hover for visibility */
+    border-color: #5a5c7e; /* Changes border color to match the background on hover */
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+/* Image styling */
+.mySlides img {
+    width: 100%; /* Ensures the image takes up full container width */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 15px; /* Rounded corners for images */
+  }
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.services-section {
+    background-color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.services-section h2 {
+    text-align: center;
+    margin-top: 30px;
+    background-color: white;
+    color: #7e80a6;
+    padding: 20px;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.service-content {
+    background-color: #8E90B6;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-content h3 {
+    color: black;
+}
+
+.service-content:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+    z-index: 10; /* Raise the card above others on hover */
+}
+
+.service-content img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.service-content p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* AFFECTS THE "WHY TRAVEL?" TEXT */
+.travel-section h2 {
+    text-align: center;
+    margin-top: 30px;
+    background-color: white;
+    color: #7e80a6;
+    padding: 20px;
+}
+
+/* AFFECTS THE SPACES INBETWEEN THE 3 IMAGES CONTAINERS */
+.travel-cards {
+    display: flex;
+    justify-content: space-around; /* Adjusted for better spacing around items */
+    margin: 40px;
+    background-color: white;
+}
+
+/* AFFECTS THE INDIVIDUAL IMAGE CONTAINERS */
+.card {
+    position: relative;
+    width: 340px; /* Reduced to accommodate circular design */
+    overflow: hidden;
+    text-align: center; /* Center content under the image */
+    background-color: white; /* Adjusted background color for better visibility */
+    height: 400px;
+}
+
+/* AFFECTS THE IMAGES WITHIN THE IMAGE CONTAINERS */
+.card img {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 300px; /* Full width of the card */
+    border-radius: 50%; /* Makes the image circular */
+    display: block;
+    transition: transform 0.5s ease; /* Smooth transition for zoom effect */
+    background-color: white;
+    height: 300px;
+    box-shadow: #7e80a6 0 0 7px;
+    border: 1px solid white;
+}
+
+/* AFFECTS THE HOVER ON THE IMAGES */
+.card:hover img {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+/* AFFECTS THE OVERLAY TEXT ON THE IMAGES */
+.overlay {
+    position: absolute;
+    bottom: 0; /* Align overlay to the bottom of the card */
+    left: 0;
+    right: 0;
+    background-color: transparent; /* Adjusted transparency for aesthetic */
+    color: black;
+    padding: 0px; /* Adjusted padding for better fit */
+    text-align: center;
+}
+
+/* AFFECTS THE TEXT WITHIN THE OVERLAY */
+.overlay h3 {
+    margin: 0;
+    font-size: 1em; /* Adjusted size for fitting within the design */
+    font-weight: bold;
+}
+
+/* AFFECTS THE BUTTON WITHIN THE OVERLAY */
+.travel-cards button {
+    background-color: #7e80a6; /* Updated color for better visibility */
+    border: none;
+    padding: 8px 16px; /* Adjusted padding */
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 0.8em; /* Reduced font size */
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition for background and border color changes */
+}
+
+.travel-cards button:hover {
+    background-color: #5a5c7e; /* Slightly darker shade on hover for visibility */
+    border-color: #5a5c7e; /* Changes border color to match the background on hover */
+}
+
+.destination-section {
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* AFFECTS THE "WHY TRAVEL?" TEXT */
+.destination-section h2 {
+    text-align: center;
+    background-color: white;
+    color: #7e80a6;
+    margin-bottom: 55px;
+}
+
+.destination-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: max-content;
+    margin: 0 auto;
+    align-items: center;  /* This ensures vertical alignment is centered */
+}
+
+.destination-card {
+    flex: 1 0 32%; /* Take up less than a third so three fit per row */
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;  /* This ensures the image and button stack vertically */
+    align-items: center;  /* Center-align the items horizontally */
+}
+
+.destination-card img {
+    width: 500px;
+    height: 500px; /* Maintain aspect ratio */
+    aspect-ratio: 1 / 1; /* Maintains a 1:1 aspect ratio */
+    object-fit: cover; /* Ensures images cover the area, may crop as needed */
+    border: 3px solid transparent; /* Default no highlight */
+    transition: transform 0.3s ease; /* Smooth scaling on hover */
+    border-radius: 15px;
+}
+
+.destination-card button {
+    background-color: #7e80a6; /* Updated color for better visibility */
+    border: none;
+    padding: 8px 16px; /* Adjusted padding */
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 0.8em; /* Reduced font size */
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition for background and border color changes */
+}
+
+.destination-card:hover img {
+    transform: scale(1.05); /* Slightly enlarge images on hover */
+}
+
+.testimonial-section h2 {
+    text-align: center;
+    margin-top: 30px;
+    background-color: white;
+    color: #7e80a6;
+    padding: 20px;
+}
+
+.testimonial-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    position: relative;
+    box-shadow: 0 3px 8px #8E90B6;
+    padding: 20px;
+    text-align: center;
+    background: white;
+}
+
+.testimonial-mySlides {
+    display: none;
+}
+
+.test-prev, .test-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.test-next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.test-prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.test-prev:hover, .test-next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.testimonial-section p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+.testimonial-section h3 {
+    font-size: 18px;
+    color: #7e80a6;
+}
+
+.test-dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .test-dot:hover {
+    background-color: #717171;
+}
+
+footer {
+    background-color: #8E90B6; /* Dark slate blue background */
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .newsletter {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center-align the items horizontally */
+    justify-content: center; /* Center content vertically if needed */
+    width: 100%; /* Full width for better control */
+    text-align: center; /* Center the text for all child elements */
+    margin-bottom: 20px; /* Space below the newsletter section */
+}
+
+footer .newsletter h2, footer .newsletter p {
+    margin: 10px 0; /* Vertical margin for spacing */
+    color: white;
+}
+
+footer .newsletter form {
+    display: flex;
+    flex-direction: row; /* Form elements in a row */
+    flex-wrap: wrap; /* Allows form elements to wrap on small screens */
+    justify-content: center; /* Center form elements horizontally */
+    gap: 10px; /* Space between form elements */
+    width: 100%; /* Full width to contain all elements properly */
+}
+
+footer .newsletter input, footer .newsletter button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    min-width: 150px; /* Minimum width to avoid too small inputs on resizing */
+}
+
+footer .newsletter button {
+    background-color: rgb(26, 24, 24);
+    color: white;
+}
+
+footer .social-media {
+    display: flex;
+    justify-content: center; /* Center social icons horizontally */
+    gap: 20px; /* Space between icons */
+    margin-top: 20px; /* Space above social icons */
+}
+
+footer .social-media a img {
+    width: 40px; /* Set a standard size for icons */
+    height: 40px;
+    transition: filter 0.3s ease; /* Smooth transition for filter */
+}
+
+footer .social-media a:hover img {
+    opacity: 0.7; /* Reduce opacity on hover */
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center; /* Center navigation links horizontally */
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin-top: 20px; /* Space above navigation */
+    gap: 15px; /* Space between navigation items */
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px; /* Adjust font size as needed */
+}
+
+@media (max-width: 800px) {
+    footer .newsletter form {
+        flex-direction: column; /* Stack form inputs vertically on smaller screens */
+    }
+}
