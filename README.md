@@ -36,4 +36,8 @@ style.css: The stylesheet file defining the visual appearance of all elements.
 
 java.js: Contains JavaScript code for interactive behaviors like slideshows.
 
-![image](https://github.com/user-attachments/assets/e3d95481-823a-46ee-9337-a800d00fdded)
+## Setup
+
+To run this project locally:
+
+use the link provided (https://af332.github.io)
