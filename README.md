@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project constitutes the front-end design for Destinasii, a startup focused on personalized travel experiences. The front page is designed to showcase our services, destinations, and customer testimonials, creating an engaging and informative first impression for visitors.
+This project constitutes the front-end design for Destinasii, a startup focused on personalised travel experiences. The front page is designed to showcase our services, destinations, and customer testimonials, creating an engaging and informative first impression for visitors.
 
 ## Technologies
 
